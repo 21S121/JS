@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<style>
+    body{
+        display:flex;
+        font-family:serif;
+        background-image: url('login1.jpg');
+  background-size:cover;
+  color: aliceblue;
+    }
+    
+    .whole{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    position:static;
+    top: 0px;;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    margin: auto;
+}
+</style>
+<body>
+ <div class="whole">
+    <div class="form">
+        <center><h3>LOG IN </h3></center> 
+        <form id="submitForm"></form>
+        <table>
+           
+            <tr>
+                <td><label>User Name </label></td>
+                <td><input type="text" id="user" name="name" required/></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" id="pwd" name="pass" required/></td>
+            </tr>
+      
+            </table>
+            <br><center><a  href="index.html"><input type="submit" onclick="{match()}"placeholder="Log in" value="Log in"></a><br>
+            <p>If not registered ?</p><a href="signin.html">Signin</a></center>
+        </form> </div></div>
+</body>
+
+<script type="text/javascript" src="user.js"></script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<style>
+    body{
+        display:flex;
+        font-family:serif;
+        background-image: url('login1.jpg');
+        background-size:cover;
+  color: aliceblue;
+    }
+   
+    .whole{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    position:static;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+button.hover{
+    color:azure;
+}
+</style>
+<body>
+    <div class="whole">
+      <div>
+        <img src="login.png"/>
+    </div>
+    <div class="form">
+        <center><h3>SIGN IN </h3></center>
+        <table>
+            <tr>
+                <td><label>User Name </label></td>
+                <td><input type="text" id="suser" name="name" required/></td>
+            </tr>
+            <tr>
+                <td><label>Mail id </label></td>
+                <td><input type="email" id="smail" name="email" required/></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" id="spwd" name="pass" required/></td>
+            </tr>
+            </table>
+            <br><center><a href="login.html"><button onclick="{updateuser()}">Sign in</button></a><br>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="user.js"></script>
+</html>
